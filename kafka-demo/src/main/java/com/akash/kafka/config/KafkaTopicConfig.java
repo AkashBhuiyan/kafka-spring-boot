@@ -20,4 +20,11 @@ public class KafkaTopicConfig {
                 .name(KafkaTopicsNameConstants.SPORTS)
                 .build();
     }
+
+    @Bean
+    public NewTopic employeeInfoTopic() {
+        return TopicBuilder
+                .name(KafkaTopicsNameConstants.EMPLOYEE_INFO)
+                .build();
+    }
 }
